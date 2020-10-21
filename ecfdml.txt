@@ -1,8 +1,8 @@
-insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('John', 'Doe', '', '', '');
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('John', 'Doe', '1975-01-01', '2020-04-04', 'M123456');
 
-insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Jane', 'Doe', '', '', '');
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Jane', 'Doe', '1985-02-02', '2020-04-05', 'M456789');
 
-insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Lorem', 'Ipsum', '', '', '');
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Lorem', 'Ipsum', '1995-03-03', '2020-04-06', 'M789456');
 
 insert into `technologie_de_predilection` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_00001', 'JS', 'JS');
 
