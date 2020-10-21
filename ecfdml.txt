@@ -1,0 +1,21 @@
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('John', 'Doe', '', '', '');
+
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Jane', 'Doe', '', '', '');
+
+insert into `developpeurs` (`nom`, `prenom`, `date_de_naissance`, `date_dentree_dans_lentreprise`, `matricule`) values ('Lorem', 'Ipsum', '', '', '');
+
+insert into `technologie_de_predilection` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_00001', 'JS', 'JS');
+
+insert into `technologie_de_predilection` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_00002', 'Java', 'Java');
+
+insert into `technologie_de_predilection` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_00003', 'C++', 'C++');
+
+insert into `technologies_apprises` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_0002', 'Java', 'Java');
+
+insert into `technologies_apprises` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_0004', 'Python', 'Python');
+
+insert into `technologies_apprises` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_0001', 'JS', 'JS');
+
+insert into `technologies_apprises` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_0004', 'Python', 'Python');
+
+insert into `technologies_apprises` (`code_unique`, `nom_fr`, `nom_en`) values ('CD_0003', 'C++', 'C++');

@@ -1,0 +1,16 @@
+SELECT D.matricule AS Dm, D.nom AS Dn, D.prenom AS Dp, P.nom_fr 
+FROM developpeurs AS D, technologie_de_predilection AS P, technologies_apprises AS L 
+WHERE L.id_dev IS NULL;
+
+SELECT D.matricule AS Dm, D.nom AS Dn, D.prenom AS Dp,
+(
+  SELECT Count(Dm, L.nom_fr AS Nf)
+  FROM developpeurs AS D, technologies_apprises AS L
+  WHERE L.code_unique = D.id_dev
+)
+FROM developpeurs AS D, technologies_apprises AS L 
+WHERE L.id_dev IS NOT NULL;
+
+SELECT D.matricule AS Dm, D.nom AS Dn, D.prenom AS Dp, L.nom_en 
+FROM developpeurs AS D, technologies_apprises AS L 
+WHERE L.code_unique = L.code_unique;

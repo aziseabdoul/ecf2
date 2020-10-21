@@ -1,0 +1,29 @@
+CREATE TABLE developpeurs (  
+id_dev int NOT NULL AUTO_INCREMENT,  
+nom varchar(255) NOT NULL,
+prenom varchar(255) NOT NULL, 
+date_de_naissance date NOT NULL,
+date_dentree_dans_lentreprise date NOT NULL,
+matricule varchar(7) NOT NULL, 
+PRIMARY KEY (`id_dev`),
+FOREIGN KEY (id_preferred_tech) REFERENCES technologie_de_predilection(id_preferred_tech),
+FOREIGN KEY (id_learning_tech) REFERENCES technologies_apprises(id_learning_tech)
+);
+
+CREATE TABLE technologie_de_predilection (  
+id_preferred_tech int NOT NULL AUTO_INCREMENT,  
+code_unique varchar(8) NOT NULL,
+nom_fr varchar(255) NOT NULL,
+nom_en varchar(255) NOT NULL,  
+PRIMARY KEY (`id_preferred_tech`),
+FOREIGN KEY (id_dev) REFERENCES developpeurs(id_dev)
+);
+
+CREATE TABLE technologies_apprises (  
+id_learning_tech int NOT NULL AUTO_INCREMENT,  
+code_unique varchar(8) NOT NULL,
+nom_fr varchar(255) NOT NULL,
+nom_en varchar(255) NOT NULL,  
+PRIMARY KEY (`id_learning_tech`),
+FOREIGN KEY (id_dev) REFERENCES developpeurs(id_dev)
+);
